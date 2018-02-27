@@ -25,7 +25,7 @@
     background-color:rgb(255, 195, 173);
     text-align: left;
     padding:16px;
-    font-size: 35px;
+    font-size: 30px;
     margin-left: 15.9%;
     height: 67.6px;
     clear: both;
@@ -35,8 +35,8 @@
 body {
     background-color: rgb(236, 242, 233);
     font-family: 'Poiret One', cursive;
+    overflow: auto;
     
-
 }
 
 
@@ -63,10 +63,39 @@ h1 {
     text-align: left;
     margin-right: 10%;
     
+}
+
+.andrea {
 
 
 }
 
+    
+nav {
+
+    float: right;
+    margin-top: -50px;
+    margin-bottom: 10px;
+    margin-right: 74px;
+}
+
+nav a {
+
+    color: grey;
+    margin-left: 13px;
+    display: inline-block;
+    border-left: 1px solid grey;
+    padding-left: 14px;
+    line-height: 18px;
+
+}
+
+nav a:first-child {
+    border-left: none
+
+
+}
+/* portfilio plus connect  */
 #full {
     
     width:960px;
@@ -112,16 +141,6 @@ div.absolute {
     height: 300px;
     
 } */
-    
-/* 
-#division {
-  background-color: rgb(255, 214, 202);
-  margin-top: 20px;
-  margin-bottom: 10px;
-  padding-right: 20%;
-  /* text-align: justify; */
-  /* clear: right; */
-   
 
 
 .clearfix::after {
@@ -129,20 +148,6 @@ div.absolute {
     clear:both;
     display: table;
 }
-
-
-/* aside {
-  width: 35%;
-  float: left;
-  background: #fff;
-  height: 350px;
-  padding: 20px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  margin-left: 30px;
-
-
-} */
 
 
 .title {
@@ -155,8 +160,6 @@ div.absolute {
     border-bottom-width: .06cm;
     margin-left: 10%;
     margin-right: 10%;
-
-
     
 
 }
@@ -172,7 +175,6 @@ img {
     
     
   
-    
 
 }
 
@@ -186,6 +188,7 @@ border-style: solid;
 border-width: .06px;
 border-color:grey;
 text-align: left;
+position: relative;
 
 
 }
@@ -210,6 +213,16 @@ footer {
   border-top-style: solid;
   border-top-color: grey;
   border-top-width: .08cm;
+  width: 100%;
+
+}
+
+h3 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-right: 55px;
+
 
 }
 
@@ -224,13 +237,13 @@ footer {
 
 input[type=text], select, textarea {
     width: 95%; 
-    padding: 12px; /* Some padding */  
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
 }
 
 input[type=submit] {
@@ -262,3 +275,85 @@ label{
     
    
 }
+
+/* Portfolio */
+
+.main  {
+    
+    margin: auto;
+    
+}
+
+.row {
+    margin: 8px -16px;
+    
+}
+
+
+
+.column {
+    
+    float: left;
+    position: absolute;
+    
+
+    
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+.item {
+
+    
+
+
+}
+
+
+.item2 {
+
+    padding-left: 60%;
+    padding-right:20% ;
+    
+
+}
+
+.item3 {
+
+    padding-top: 60%;
+    
+    
+}
+
+.item4 {
+
+    padding-top: 60%;
+    padding-left: 60%;
+    padding-right: 20%;
+    
+
+} 
+
+
+
+.row,
+.row > .column {
+           padding: 10px; 
+       
+   }
+
+/* @media (max-width: 900px) {
+    .column {
+        width: 70%;
+    }
+}
+@media (max-width: 600px) {
+        .column {
+            width: 100%;
+        }
+    } */
